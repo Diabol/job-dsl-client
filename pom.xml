@@ -13,7 +13,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <repositories>
+           <repository>
+             <id>repo.jenkins-ci.org</id>
+             <url>http://repo.jenkins-ci.org/public/</url>
+           </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
