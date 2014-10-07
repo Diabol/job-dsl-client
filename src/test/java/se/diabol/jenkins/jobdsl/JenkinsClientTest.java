@@ -1,6 +1,7 @@
 package se.diabol.jenkins.jobdsl;
 
 import hudson.model.FreeStyleProject;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.jvnet.hudson.test.JenkinsRule;
@@ -29,6 +30,7 @@ public class JenkinsClientTest {
 
 
     @Test
+    @Ignore
     public void testCreateUpdateJob() throws Exception {
         JenkinsClient client = new JenkinsClient(jenkins.getURL());
         String jobXml1 = convertStreamToString(this.getClass().getResourceAsStream("/job1.xml"));
